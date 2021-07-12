@@ -1,2 +1,7 @@
+@import '../node_modules/toastr/toastr.scss';
+@import '../node_modules/basiclightbox/src/styles/main.scss';
 
-//@import './example';
+@import './base';
+@import './form';
+@import './component-btn';
+@import './gallery';

@@ -11,38 +11,50 @@
       crossorigin="anonymous"
     />
     <link
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"
-/>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-  <input
-    type="text"
-    name="query"
-    autocomplete="off"
-    placeholder="Search images..."
-  />
-</form>
-<ul class="gallery js-gallery">
-  <!-- Список <li> с карточками изображений -->
-</ul>
- <button
+    <h1 class="title">In search of cool photo? Enter below &#8659</h1>
+    <form class="search" id="search-form">
+      <input
+      class="search-input"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="search-btn btn-main" type="submit">Find</button>
+    </form>
+    <ul class="gallery js-gallery list">
+      <!-- Список <li> с карточками изображений -->
+    </ul>
+
+    <button
+      class="btn btn-main button"
       type="button"
-      class="btn btn-primary button"
-      data-action="load-more"
+      data-action="load-more" disabled
     >
-      <!-- <span
-        class="spinner-border spinner-border-sm spinner is-hidden"
+      <span
+        class="spinner-grow spinner-grow-sm spinner"
         role="status"
         aria-hidden="true"
-      ></span> -->
-
-      <span class="label">Load more</span>
+      ></span>
+      <span class="label">Loading...</span>
     </button>
+    <div id="anchor"></div>
 
-
-   
     <script src="./index.js"></script>
   </body>
 </html>

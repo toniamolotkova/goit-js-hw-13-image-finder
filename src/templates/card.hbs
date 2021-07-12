@@ -1,26 +1,26 @@
-{{#each this}}
-<li>
-    <div class="photo-card">
-        <img src="{{webformatURL}}" alt="{{tags}}" />
+{{#each this.hits}}
+<li class="gallery-item">
+    
+        <img class='gallery-img' data-source="{{largeImageURL}}" src="{{webformatURL}}" alt="{{tags}}" />
 
         <div class="stats">
             <p class="stats-item">
-                <i class="material-icons">thumb_up</i>
+                <i class="material-icons stats-icon">thumb_up</i>
                 {{likes}}
             </p>
             <p class="stats-item">
-                <i class="material-icons">visibility</i>
+                <i class="material-icons stats-icon">visibility</i>
                 {{views}}
             </p>
             <p class="stats-item">
-                <i class="material-icons">comment</i>
+                <i class="material-icons stats-icon">comment</i>
                 {{comments}}
             </p>
             <p class="stats-item">
-                <i class="material-icons">cloud_download</i>
+                <i class="material-icons stats-icon">cloud_download</i>
                 {{downloads}}
             </p>
         </div>
-    </div>
+    
 </li>
 {{/each}}
